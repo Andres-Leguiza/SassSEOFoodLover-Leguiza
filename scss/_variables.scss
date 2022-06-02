@@ -13,9 +13,9 @@ $color-negro-30: rgba(0, 0, 0, 0.3);
 $transition-250: all 250ms;
 $transition-500: all 500ms;
 
-@mixin small-video-size {
-    width: 350px;
-    height: 300px;
+@mixin video-size ($width,$height) {
+    width: $width;
+    height: $height;
 }
 
 @mixin links-hover-effect {

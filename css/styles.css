@@ -99,10 +99,10 @@ nav {
     -webkit-transform: scale(1.05);
             transform: scale(1.05);
   }
-  .card__destacados iframe {
-    width: 350px;
-    height: 300px;
-  }
+}
+
+.card__destacados iframe {
+  width: 100%;
 }
 
 /* Footer */

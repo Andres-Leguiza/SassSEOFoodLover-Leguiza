@@ -55,12 +55,11 @@ nav {
 #hero__Contenido {
     iframe {
         @media (max-width: 1200px) {
-            width: 640px;
-            height: 400px;
+            @include video-size(640px,400px);
         }
         @media (max-width: 768px) {
             border-radius: 30px;
-            @include small-video-size;
+            @include video-size(350px,300px);
         }
     }
 }
@@ -76,9 +75,9 @@ nav {
         &:hover {
             transform: scale(1.05);  
         }
-        iframe {
-            @include small-video-size;
-        }
+    }
+    iframe {
+        width: 100%;
     }
 }
 
