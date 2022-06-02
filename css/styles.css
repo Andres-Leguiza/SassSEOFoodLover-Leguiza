@@ -1,0 +1,170 @@
+@import url("https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;900&display=swap");
+body {
+  font-family: 'Rubik', sans-serif;
+  background: #ffb300;
+  background: linear-gradient(288deg, #ffb300 0%, #ff9100 74%);
+}
+
+/* Barra de Navegacion */
+nav {
+  position: -webkit-sticky;
+  position: sticky;
+  z-index: 100;
+  top: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+@media (max-width: 768px) {
+  .navItems {
+    border: solid 1px;
+    background-color: rgba(0, 0, 0, 0.5);
+    border-color: grey;
+    border-radius: 10px;
+  }
+}
+
+@media (min-width: 768px) {
+  .navItems {
+    font-size: 1.2rem;
+    -webkit-transition: all 250ms;
+    transition: all 250ms;
+  }
+  .navItems:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 3px;
+    color: rgba(255, 255, 255, 0.55);
+  }
+}
+
+/* Contenido Principal de Index*/
+.hero {
+  background-image: url(../img/FoodLoverBackground.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  max-width: 100%;
+  position: relative;
+}
+
+.hero__Titulos {
+  font-weight: 600;
+  font-size: 1.4rem;
+  color: #cf712e;
+  border-radius: 10px 10px 0 0;
+  background-color: rgba(0, 0, 0, 0.7);
+}
+
+@media (min-width: 768px) {
+  .hero__Titulos {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .hero {
+    background-image: url(../img/FoodLoverBackgroundSmall.jpg);
+  }
+}
+
+@media (max-width: 1200px) {
+  #hero__Contenido iframe {
+    width: 640px;
+    height: 400px;
+  }
+}
+
+@media (max-width: 768px) {
+  #hero__Contenido iframe {
+    border-radius: 30px;
+    width: 350px;
+    height: 300px;
+  }
+}
+
+/* Contenido Principal de la pagina Recetas Destacadas */
+.card__destacados {
+  background-color: rgba(200, 200, 200, 0.9);
+  max-width: 22rem;
+  max-height: 40rem;
+  border-radius: 30px;
+}
+
+@media (min-width: 768px) {
+  .card__destacados {
+    -webkit-transition: all 500ms;
+    transition: all 500ms;
+  }
+  .card__destacados:hover {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
+  .card__destacados iframe {
+    width: 350px;
+    height: 300px;
+  }
+}
+
+/* Footer */
+.footer {
+  font-weight: 600;
+  font-size: 1.2rem;
+  background-color: rgba(0, 0, 0, 0.3);
+}
+
+.footer a {
+  text-decoration: none;
+  cursor: context-menu;
+}
+
+.footer img {
+  width: 2rem;
+  -webkit-transition: all 250ms;
+  transition: all 250ms;
+}
+
+.footer img:hover {
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+.footer__aboutUs, .footer__aboutUs:hover {
+  color: rgba(255, 255, 255, 0.55);
+}
+
+@media (max-width: 768px) {
+  .footer__aboutUs:hover {
+    -webkit-transform: scale(1.1);
+            transform: scale(1.1);
+  }
+}
+
+@media (min-width: 768px) {
+  .footer__aboutUs:hover {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 3px;
+    color: rgba(255, 255, 255, 0.55);
+  }
+}
+
+@media (min-width: 768px) {
+  .footer__aboutUs, .footer__aboutUs:hover {
+    -webkit-transition: all 250ms;
+    transition: all 250ms;
+  }
+}
+
+@media (min-width: 768px) {
+  .footer {
+    font-size: 1.4rem;
+  }
+}
+
+.stickyArrow img {
+  z-index: 100;
+  position: fixed;
+  width: 4rem;
+  right: 1rem;
+  bottom: 4rem;
+}
+/*# sourceMappingURL=styles.css.map */
